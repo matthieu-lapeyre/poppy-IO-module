@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -7467,6 +7467,14 @@ CFG_SEL[1:0] = 00, Default confg</text>
 <wire x1="246.38" y1="629.92" x2="510.54" y2="629.92" width="0.1524" layer="97" style="shortdash"/>
 <text x="251.46" y="619.76" size="7.62" layer="97">Mega-compatible MCU</text>
 <text x="134.62" y="55.88" size="1.778" layer="91" rot="MR270">HWB</text>
+<text x="276.86" y="127" size="1.778" layer="91" rot="R90">15</text>
+<text x="274.32" y="127" size="1.778" layer="91" rot="R90">16</text>
+<text x="271.78" y="127" size="1.778" layer="91" rot="R90">17</text>
+<text x="307.34" y="127" size="1.778" layer="91" rot="R90">18</text>
+<text x="304.8" y="127" size="1.778" layer="91" rot="R90">19</text>
+<text x="302.26" y="127" size="1.778" layer="91" rot="R90">20</text>
+<text x="299.72" y="127" size="1.778" layer="91" rot="R90">21</text>
+<text x="279.4" y="127" size="1.778" layer="91" rot="R90">14</text>
 </plain>
 <instances>
 <instance part="X1" gate="-1" x="60.96" y="101.6" rot="MR270"/>
@@ -8021,23 +8029,7 @@ CFG_SEL[1:0] = 00, Default confg</text>
 <wire x1="264.16" y1="106.68" x2="266.7" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="106.68" x2="269.24" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="269.24" y1="106.68" x2="271.78" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="271.78" y1="106.68" x2="274.32" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="106.68" x2="276.86" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="276.86" y1="106.68" x2="279.4" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="106.68" x2="281.94" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="106.68" x2="284.48" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="106.68" x2="287.02" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="287.02" y1="106.68" x2="289.56" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="106.68" x2="292.1" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="292.1" y1="106.68" x2="294.64" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="106.68" x2="297.18" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="106.68" x2="299.72" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="106.68" x2="302.26" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="302.26" y1="106.68" x2="304.8" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="304.8" y1="106.68" x2="307.34" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="106.68" x2="309.88" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="309.88" y1="106.68" x2="312.42" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="106.68" x2="314.96" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="106.68" x2="314.96" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="106.68" x2="317.5" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="106.68" x2="330.2" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="104.14" x2="317.5" y2="106.68" width="0.1524" layer="91"/>
@@ -8152,57 +8144,9 @@ CFG_SEL[1:0] = 00, Default confg</text>
 <wire x1="269.24" y1="106.68" x2="269.24" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-163" pin="1"/>
 <wire x1="271.78" y1="106.68" x2="271.78" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-165" pin="1"/>
-<wire x1="274.32" y1="106.68" x2="274.32" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-167" pin="1"/>
-<wire x1="276.86" y1="106.68" x2="276.86" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-169" pin="1"/>
-<wire x1="279.4" y1="106.68" x2="279.4" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-171" pin="1"/>
-<wire x1="281.94" y1="106.68" x2="281.94" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-173" pin="1"/>
-<wire x1="284.48" y1="106.68" x2="284.48" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-175" pin="1"/>
-<wire x1="287.02" y1="106.68" x2="287.02" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-177" pin="1"/>
-<wire x1="289.56" y1="106.68" x2="289.56" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-179" pin="1"/>
-<wire x1="292.1" y1="106.68" x2="292.1" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-181" pin="1"/>
-<wire x1="294.64" y1="106.68" x2="294.64" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-183" pin="1"/>
-<wire x1="297.18" y1="106.68" x2="297.18" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-185" pin="1"/>
-<wire x1="299.72" y1="106.68" x2="299.72" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-187" pin="1"/>
-<wire x1="302.26" y1="106.68" x2="302.26" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-189" pin="1"/>
-<wire x1="304.8" y1="106.68" x2="304.8" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-191" pin="1"/>
-<wire x1="307.34" y1="106.68" x2="307.34" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-193" pin="1"/>
-<wire x1="309.88" y1="106.68" x2="309.88" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-195" pin="1"/>
-<wire x1="312.42" y1="106.68" x2="312.42" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-197" pin="1"/>
 <wire x1="314.96" y1="106.68" x2="314.96" y2="104.14" width="0.1524" layer="91"/>
 <junction x="314.96" y="106.68"/>
-<junction x="312.42" y="106.68"/>
-<junction x="309.88" y="106.68"/>
-<junction x="307.34" y="106.68"/>
-<junction x="304.8" y="106.68"/>
-<junction x="302.26" y="106.68"/>
-<junction x="299.72" y="106.68"/>
-<junction x="297.18" y="106.68"/>
-<junction x="294.64" y="106.68"/>
-<junction x="292.1" y="106.68"/>
-<junction x="289.56" y="106.68"/>
-<junction x="284.48" y="106.68"/>
-<junction x="287.02" y="106.68"/>
-<junction x="281.94" y="106.68"/>
-<junction x="279.4" y="106.68"/>
-<junction x="276.86" y="106.68"/>
-<junction x="274.32" y="106.68"/>
 <junction x="271.78" y="106.68"/>
 <junction x="269.24" y="106.68"/>
 <junction x="266.7" y="106.68"/>
@@ -9293,12 +9237,24 @@ CFG_SEL[1:0] = 00, Default confg</text>
 <label x="410.845" y="490.855" size="1.778" layer="95"/>
 <pinref part="IC3" gate="1" pin="(SDA/INT1)PD1"/>
 </segment>
+<segment>
+<wire x1="302.26" y1="124.46" x2="302.26" y2="111.76" width="0.1524" layer="91"/>
+<label x="302.26" y="114.3" size="1.778" layer="95" rot="R90"/>
+<pinref part="X1" gate="-185" pin="1"/>
+<wire x1="302.26" y1="111.76" x2="299.72" y2="104.14" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
 <wire x1="472.44" y1="487.68" x2="406.4" y2="487.68" width="0.1524" layer="91"/>
 <label x="410.845" y="488.315" size="1.778" layer="95"/>
 <pinref part="IC3" gate="1" pin="(SCL/INT0)PD0"/>
+</segment>
+<segment>
+<wire x1="299.72" y1="124.46" x2="299.72" y2="111.76" width="0.1524" layer="91"/>
+<label x="299.72" y="114.3" size="1.778" layer="95" rot="R90"/>
+<pinref part="X1" gate="-183" pin="1"/>
+<wire x1="299.72" y1="111.76" x2="297.18" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC9" class="0">
@@ -9726,12 +9682,24 @@ CFG_SEL[1:0] = 00, Default confg</text>
 <label x="446.405" y="493.395" size="1.778" layer="95"/>
 <pinref part="IC3" gate="1" pin="(RXD1/INT2)PD2"/>
 </segment>
+<segment>
+<wire x1="304.8" y1="124.46" x2="304.8" y2="111.76" width="0.1524" layer="91"/>
+<label x="304.8" y="114.3" size="1.778" layer="95" rot="R90"/>
+<pinref part="X1" gate="-187" pin="1"/>
+<wire x1="304.8" y1="111.76" x2="302.26" y2="104.14" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="TXD1" class="0">
 <segment>
 <wire x1="472.44" y1="495.3" x2="406.4" y2="495.3" width="0.1524" layer="91"/>
 <label x="446.405" y="495.935" size="1.778" layer="95"/>
 <pinref part="IC3" gate="1" pin="(TXD1/INT3)PD3"/>
+</segment>
+<segment>
+<wire x1="307.34" y1="124.46" x2="307.34" y2="111.76" width="0.1524" layer="91"/>
+<label x="307.34" y="114.3" size="1.778" layer="95" rot="R90"/>
+<pinref part="X1" gate="-189" pin="1"/>
+<wire x1="307.34" y1="111.76" x2="304.8" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RXD2" class="0">
@@ -9744,6 +9712,12 @@ CFG_SEL[1:0] = 00, Default confg</text>
 <label x="325.12" y="424.815" size="1.778" layer="95"/>
 <pinref part="IC3" gate="1" pin="PH0(RXD2)"/>
 </segment>
+<segment>
+<wire x1="271.78" y1="111.76" x2="271.78" y2="124.46" width="0.1524" layer="91"/>
+<label x="271.78" y="114.3" size="1.778" layer="95" rot="R90"/>
+<pinref part="X1" gate="-165" pin="1"/>
+<wire x1="274.32" y1="104.14" x2="271.78" y2="111.76" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="RXD3" class="0">
 <segment>
@@ -9754,6 +9728,12 @@ CFG_SEL[1:0] = 00, Default confg</text>
 <wire x1="320.04" y1="447.04" x2="335.28" y2="447.04" width="0.1524" layer="91"/>
 <label x="325.12" y="447.675" size="1.778" layer="95"/>
 <pinref part="IC3" gate="1" pin="PJ0(RXD3/PCINT9)"/>
+</segment>
+<segment>
+<wire x1="276.86" y1="111.76" x2="276.86" y2="124.46" width="0.1524" layer="91"/>
+<label x="276.86" y="114.3" size="1.778" layer="95" rot="R90"/>
+<pinref part="X1" gate="-169" pin="1"/>
+<wire x1="276.86" y1="111.76" x2="279.4" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TXD2" class="0">
@@ -9766,6 +9746,12 @@ CFG_SEL[1:0] = 00, Default confg</text>
 <label x="325.12" y="427.355" size="1.778" layer="95"/>
 <pinref part="IC3" gate="1" pin="PH1(TXD2)"/>
 </segment>
+<segment>
+<wire x1="274.32" y1="111.76" x2="274.32" y2="124.46" width="0.1524" layer="91"/>
+<label x="274.32" y="114.3" size="1.778" layer="95" rot="R90"/>
+<pinref part="X1" gate="-167" pin="1"/>
+<wire x1="274.32" y1="111.76" x2="276.86" y2="104.14" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="TXD3" class="0">
 <segment>
@@ -9776,6 +9762,12 @@ CFG_SEL[1:0] = 00, Default confg</text>
 <wire x1="320.04" y1="449.58" x2="335.28" y2="449.58" width="0.1524" layer="91"/>
 <label x="325.12" y="450.215" size="1.778" layer="95"/>
 <pinref part="IC3" gate="1" pin="PJ1(TXD3/PCINT10)"/>
+</segment>
+<segment>
+<wire x1="279.4" y1="124.46" x2="279.4" y2="111.76" width="0.1524" layer="91"/>
+<label x="279.4" y="114.3" size="1.778" layer="95" rot="R90"/>
+<pinref part="X1" gate="-171" pin="1"/>
+<wire x1="279.4" y1="111.76" x2="281.94" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PC0" class="0">
@@ -10939,38 +10931,6 @@ CFG_SEL[1:0] = 00, Default confg</text>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="104,1,-53.34,424.18,U1,VCC,+5V,,,"/>
-<approved hash="104,1,-53.34,421.64,U1,UVCC,+5V,,,"/>
-<approved hash="104,1,-53.34,368.3,U1,UGND,GND,,,"/>
-<approved hash="104,1,-53.34,416.56,U1,AVCC,+5V,,,"/>
-<approved hash="104,1,-91.44,624.84,IC3,AGND,GND,,,"/>
-<approved hash="104,1,-91.44,627.38,IC3,AVCC,+5V,,,"/>
-<approved hash="104,1,-91.44,604.52,IC3,GND1,GND,,,"/>
-<approved hash="104,1,-91.44,601.98,IC3,GND2,GND,,,"/>
-<approved hash="104,1,-91.44,599.44,IC3,GND3,GND,,,"/>
-<approved hash="104,1,-91.44,617.22,IC3,VCC,+5V,,,"/>
-<approved hash="104,1,-91.44,614.68,IC3,VCC1,+5V,,,"/>
-<approved hash="104,1,-91.44,612.14,IC3,VCC2,+5V,,,"/>
-<approved hash="104,1,-91.44,609.6,IC3,VCC3,+5V,,,"/>
-<approved hash="104,1,-358.14,520.7,IC4,AVCC,+5V,,,"/>
-<approved hash="104,1,-358.14,487.68,IC4,PAD,GND,,,"/>
-<approved hash="104,1,-358.14,492.76,IC4,UGND,GND,,,"/>
-<approved hash="104,1,-358.14,500.38,IC4,UVCC,+5V,,,"/>
-<approved hash="104,1,-358.14,513.08,IC4,VCC,+5V,,,"/>
-<approved hash="104,1,-337.82,373.38,U3,VDD33_2,+3V3,,,"/>
-<approved hash="104,1,-337.82,370.84,U3,VDD33_3,+3V3,,,"/>
-<approved hash="104,1,-337.82,368.3,U3,VDD33,+3V3,,,"/>
-<approved hash="104,1,-337.82,365.76,U3,VDDA33_2,+3V3,,,"/>
-<approved hash="104,1,-337.82,363.22,U3,VDDA33_3,+3V3,,,"/>
-<approved hash="104,1,-337.82,360.68,U3,VDDA33,+3V3,,,"/>
-<approved hash="104,1,-337.82,302.26,U3,VBUS_DET,+3V3,,,"/>
-<approved hash="104,1,-53.34,307.34,U4,VCC,+5V,,,"/>
-<approved hash="104,1,-53.34,304.8,U4,UVCC,+5V,,,"/>
-<approved hash="104,1,-53.34,251.46,U4,UGND,GND,,,"/>
-<approved hash="104,1,-53.34,299.72,U4,AVCC,+5V,,,"/>
-<approved hash="113,1,-276.86,524.518,RESET-EN,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
