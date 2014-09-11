@@ -1803,11 +1803,6 @@ Source: RS Component / BUORNS</description>
 </library>
 <library name="SmartPrj">
 <packages>
-<package name="FIDUCIA-MOUNT">
-<circle x="0" y="0" radius="0.5" width="2.1844" layer="29"/>
-<circle x="0" y="0" radius="1.5" width="0.127" layer="41"/>
-<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100"/>
-</package>
 <package name="SOT23-DBV">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; DBV (R-PDSO-G5)&lt;p&gt;
 Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
@@ -2121,9 +2116,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 </package>
 </packages>
 <symbols>
-<symbol name="FIDUCIAL">
-<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
-</symbol>
 <symbol name="LP2985-XXDBVR">
 <wire x1="-7.62" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
@@ -2257,18 +2249,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="FIDUCIALMOUNT">
-<gates>
-<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FIDUCIA-MOUNT">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LP2985-XXDBVR" prefix="IC">
 <description>&lt;b&gt;ULTRALOW-POWER 50-mA LOW-DROPOUT LINEAR REGULATORS&lt;/b&gt;&lt;p&gt;
 50-mA Low-Dropout Regulator&lt;br&gt;
@@ -2557,8 +2537,8 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <wire x1="-1.016" y1="0" x2="-1.524" y2="0" width="0.1524" layer="51"/>
 <wire x1="-0.254" y1="-0.127" x2="-0.254" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
 <wire x1="0.254" y1="0.127" x2="0.254" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1" cream="no"/>
+<smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1" cream="no"/>
 <text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
@@ -7109,9 +7089,6 @@ a single data stream for the application</description>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
-<part name="FD1" library="SmartPrj" deviceset="FIDUCIALMOUNT" device=""/>
-<part name="FD2" library="SmartPrj" deviceset="FIDUCIALMOUNT" device=""/>
-<part name="FD3" library="SmartPrj" deviceset="FIDUCIALMOUNT" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="IC3" library="SmartPrj" deviceset="ATMEGA2560" device="AU" technology="2560-16" value="ATMEGA2560-16AU"/>
 <part name="P+11" library="supply1" deviceset="+5V" device=""/>
@@ -7705,9 +7682,6 @@ CFG_SEL[1:0] = 00, Default confg</text>
 <instance part="P+8" gate="1" x="142.24" y="607.06" smashed="yes">
 <attribute name="VALUE" x="144.145" y="609.6" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="FD1" gate="G$1" x="99.06" y="558.8"/>
-<instance part="FD2" gate="G$1" x="109.22" y="558.8"/>
-<instance part="FD3" gate="G$1" x="119.38" y="558.8"/>
 <instance part="GND17" gate="1" x="314.96" y="525.78" smashed="yes">
 <attribute name="VALUE" x="312.42" y="523.24" size="1.778" layer="96"/>
 </instance>

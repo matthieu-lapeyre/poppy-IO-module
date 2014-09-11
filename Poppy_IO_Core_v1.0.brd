@@ -29,9 +29,9 @@
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
@@ -149,7 +149,7 @@
 <wire x1="41.15" y1="15.2" x2="40.85" y2="15.5" width="0.2" layer="21"/>
 <wire x1="40.85" y1="15.5" x2="41.05" y2="15.5" width="0.2" layer="21"/>
 <wire x1="41.05" y1="15.5" x2="41.15" y2="15.4" width="0.2" layer="21"/>
-<text x="42.45" y="15.9" size="1" layer="21" ratio="17" rot="R180">Y</text>
+<text x="42.6" y="16.15" size="1" layer="21" ratio="17" rot="R180">Y</text>
 <text x="38.75" y="19.7" size="1" layer="21" ratio="17" rot="R180">X</text>
 <rectangle x1="29.55" y1="5.45" x2="35.5" y2="9.4" layer="41"/>
 <text x="11.9" y="29.2" size="1" layer="21" font="vector" ratio="17" rot="R90">TX</text>
@@ -1254,11 +1254,6 @@ Source: RS Component / BUORNS</description>
 </library>
 <library name="SmartPrj">
 <packages>
-<package name="FIDUCIA-MOUNT">
-<circle x="0" y="0" radius="0.5" width="2.1844" layer="29"/>
-<circle x="0" y="0" radius="1.5" width="0.127" layer="41"/>
-<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100"/>
-</package>
 <package name="TQFP100">
 <description>&lt;b&gt;100-lead Thin Quad Flat Pack Package Outline&lt;/b&gt;</description>
 <wire x1="-7" y1="6.25" x2="-6.25" y2="7" width="0.254" layer="21"/>
@@ -1588,8 +1583,8 @@ Source: http://focus.ti.com/lit/ds/symlink/tps77001.pdf</description>
 <wire x1="-1.016" y1="0" x2="-1.524" y2="0" width="0.1524" layer="51"/>
 <wire x1="-0.254" y1="-0.127" x2="-0.254" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
 <wire x1="0.254" y1="0.127" x2="0.254" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
+<smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1" cream="no"/>
+<smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1" cream="no"/>
 <text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
@@ -3552,82 +3547,85 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="X1" library="Poppy_IO_Core_lib" package="SLOT-1376408-1_1.8V" value="1376408-SLOT_1.8V" x="0" y="0" smashed="yes">
-<attribute name="NAME" x="0" y="-3" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="0" y="-4.75" size="1.27" layer="27"/>
+<attribute name="NAME" x="76.35" y="12.4" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="79" y="4.55" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="U1" library="Xevelabs" package="QFN-32_50P_N" value="ATmega16u2" x="23.9" y="13.2" smashed="yes" rot="R45">
 <attribute name="NAME" x="23.270671875" y="11.806996875" size="0.7" layer="51" ratio="5" rot="R45"/>
-<attribute name="NAME" x="19.735140625" y="13.673759375" size="0.9" layer="25" ratio="17" rot="R45"/>
-<attribute name="VALUE" x="24.790953125" y="8.41995625" size="0.7" layer="27" ratio="5" rot="R45"/>
+<attribute name="NAME" x="81.885140625" y="15.223759375" size="0.9" layer="25" ratio="17" rot="R45"/>
+<attribute name="VALUE" x="76.890953125" y="7.31995625" size="0.7" layer="27" ratio="5" rot="R45"/>
 </element>
 <element name="C4" library="Xevelabs" package="0402_N" value="1uF" x="22.3" y="16.95" smashed="yes" rot="R45">
-<attribute name="NAME" x="23.25459375" y="17.536896875" size="0.9" layer="25" ratio="17" rot="R45"/>
-<attribute name="VALUE" x="21.14034375" y="16.737865625" size="0.7" layer="27" ratio="5" rot="R45"/>
+<attribute name="NAME" x="85.40459375" y="19.086896875" size="0.9" layer="25" ratio="17" rot="R45"/>
+<attribute name="VALUE" x="73.24034375" y="15.637865625" size="0.7" layer="27" ratio="5" rot="R45"/>
 </element>
 <element name="C5" library="Xevelabs" package="0402_N" value="18pF" x="17.8" y="10.1" smashed="yes">
-<attribute name="NAME" x="18.89" y="9.84" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="16.83" y="10.77" size="0.7" layer="27" ratio="5"/>
+<attribute name="NAME" x="81.04" y="11.39" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="68.93" y="9.67" size="0.7" layer="27" ratio="5"/>
 </element>
 <element name="C6" library="Xevelabs" package="0402_N" value="18pF" x="19.75" y="10.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="18.66" y="10.36" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="20.72" y="9.43" size="0.7" layer="27" ratio="5" rot="R180"/>
+<attribute name="NAME" x="80.81" y="11.91" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="72.82" y="8.33" size="0.7" layer="27" ratio="5" rot="R180"/>
 </element>
 <element name="RPTC1" library="Xevelabs" package="0603_N" value="100R" x="30.95" y="7.55" smashed="yes" rot="R270">
-<attribute name="NAME" x="30.17" y="4.87" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="31.93" y="9.07" size="0.7" layer="27" ratio="5" rot="R270"/>
+<attribute name="NAME" x="71.17" y="2.97" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="84.03" y="7.97" size="0.7" layer="27" ratio="5" rot="R270"/>
 </element>
 <element name="D1" library="Xevelabs" package="SOD-923_N" value="5.1V" x="30.95" y="10.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="32.4" y="9.59" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="31.16" y="11.14" size="0.7" layer="27" ratio="5" rot="R90"/>
+<attribute name="NAME" x="73.4" y="7.69" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="83.26" y="10.04" size="0.7" layer="27" ratio="5" rot="R90"/>
 </element>
 <element name="R1" library="Xevelabs" package="ARRAY_0402_65P_2_N" value="22R" x="16.2" y="14.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="15.13" y="14.84" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="17" y="13.86" size="0.7" layer="27" ratio="5" rot="R180"/>
+<attribute name="NAME" x="77.28" y="16.39" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="76.1" y="14.16" size="0.7" layer="27" ratio="5" rot="R180"/>
 </element>
-<element name="SJ1" library="Xevelabs" package="SJ_2S-TRACE2" value="SOLDERJUMPER2_TRACE2" x="31.4" y="21.05" rot="MR180"/>
+<element name="SJ1" library="Xevelabs" package="SJ_2S-TRACE2" value="SOLDERJUMPER2_TRACE2" x="31.4" y="21.05" smashed="yes" rot="MR180">
+<attribute name="NAME" x="72.7975" y="21.18" size="0.4064" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="72.349" y="15.9975" size="0.4064" layer="28" rot="MR90"/>
+</element>
 <element name="D2" library="OPL" package="LED0603" value="Red" x="36.15" y="13.6" smashed="yes" rot="R90">
-<attribute name="NAME" x="37.865" y="12.895" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="36.4675" y="12.457" size="0.635" layer="27" ratio="10" rot="R90"/>
+<attribute name="NAME" x="78.865" y="10.995" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="76.5675" y="10.907" size="0.635" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="D3" library="OPL" package="LED0603" value="Green" x="34.5" y="13.6" smashed="yes" rot="R90">
-<attribute name="NAME" x="33.665" y="12.945" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="34.8175" y="12.457" size="0.635" layer="27" ratio="10" rot="R90"/>
+<attribute name="NAME" x="74.665" y="11.045" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="74.9175" y="10.907" size="0.635" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C1" library="Xevelabs" package="0402_N" value="1uF" x="21.1" y="17.65" smashed="yes" rot="R225">
-<attribute name="NAME" x="20.145403125" y="17.0631" size="0.9" layer="25" ratio="17" rot="R225"/>
-<attribute name="VALUE" x="22.259653125" y="17.86213125" size="0.7" layer="27" ratio="5" rot="R225"/>
+<attribute name="NAME" x="82.295403125" y="18.6131" size="0.9" layer="25" ratio="17" rot="R225"/>
+<attribute name="VALUE" x="74.359653125" y="16.76213125" size="0.7" layer="27" ratio="5" rot="R225"/>
 </element>
 <element name="R2" library="OPL" package="R1206-8" value="150R" x="32.6" y="17.6" smashed="yes" rot="R180">
-<attribute name="NAME" x="34.505" y="19.98" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="34.251" y="17.854" size="0.635" layer="27" ratio="10" rot="R180"/>
+<attribute name="NAME" x="75.505" y="18.08" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="74.351" y="16.304" size="0.635" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="FD1" library="SmartPrj" package="FIDUCIA-MOUNT" value="FIDUCIALMOUNT" x="1.8" y="25.6" smashed="yes"/>
-<element name="FD2" library="SmartPrj" package="FIDUCIA-MOUNT" value="FIDUCIALMOUNT" x="1.8" y="8.95" smashed="yes"/>
-<element name="FD3" library="SmartPrj" package="FIDUCIA-MOUNT" value="FIDUCIALMOUNT" x="50.7" y="6.15" smashed="yes"/>
 <element name="IC3" library="SmartPrj" package="TQFP100" value="ATMEGA2560-16AU" x="53.45" y="20" smashed="yes" rot="R45">
-<attribute name="NAME" x="43.059221875" y="20.434675" size="0.9" layer="25" ratio="17" rot="R225"/>
-<attribute name="VALUE" x="49.221359375" y="19.731296875" size="1.27" layer="27" rot="R45"/>
+<attribute name="NAME" x="84.059221875" y="18.534675" size="0.9" layer="25" ratio="17" rot="R225"/>
+<attribute name="VALUE" x="77.821359375" y="18.081296875" size="1.27" layer="27" rot="R45"/>
 </element>
-<element name="RESET-EN" library="jumper" package="SJ" value="" x="35.4" y="21.05" rot="MR0"/>
+<element name="RESET-EN" library="jumper" package="SJ" value="" x="35.4" y="21.05" smashed="yes" rot="MR0">
+<attribute name="NAME" x="74.457" y="24.601" size="1.27" layer="26" ratio="10" rot="MR270"/>
+<attribute name="VALUE" x="34.9999" y="21.05" size="0.02" layer="28" rot="MR0"/>
+</element>
 <element name="RN4" library="resistor-dil" package="CAY16" value="1k" x="31.75" y="26" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="31.75" y="26" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="31.75" y="26" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="31.75" y="26" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="31.75" y="26" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="33.89" y="24.645" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="30.48" y="24.095" size="1.27" layer="27" ratio="10" rot="R90"/>
+<attribute name="NAME" x="74.89" y="22.745" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="82.58" y="22.995" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="RN3" library="resistor-dil" package="CAY16" value="1k" x="31.75" y="29.6" smashed="yes" rot="R270">
 <attribute name="OC_NEWARK" value="unknown" x="31.75" y="29.6" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="" x="31.75" y="29.6" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MF" value="" x="31.75" y="29.6" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="31.75" y="29.6" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="29.66" y="31.555" size="0.9" layer="25" ratio="17" rot="R270"/>
-<attribute name="VALUE" x="33.02" y="31.505" size="1.27" layer="27" ratio="10" rot="R270"/>
+<attribute name="NAME" x="70.91" y="30.705" size="0.9" layer="25" ratio="17" rot="R270"/>
+<attribute name="VALUE" x="31.72" y="37.455" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="IC6" library="SmartPrj" package="SOT23-DBV" value="LP2985-33DBVR" x="7.05" y="27.6" smashed="yes">
-<attribute name="NAME" x="5.245" y="26.445" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="5.145" y="24.171" size="1.27" layer="27"/>
+<attribute name="NAME" x="74.645" y="29.245" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="76.029" y="9.945" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="U3" library="Poppy_IO_Core_lib" package="QFN50P600X600X100-37N" value="USB2514B-AEZC" x="9.55" y="16.5" smashed="yes" rot="R180">
 <attribute name="PACKAGE" value="36VQFN" x="9.55" y="16.5" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3635,322 +3633,325 @@ design rules under a new name.</description>
 <attribute name="MPN" value="USB2514B-AEZC" x="9.55" y="16.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER" value="Microchip" x="9.55" y="16.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="2292604" x="9.55" y="16.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="14.249" y="12.563" size="0.9" layer="25" ratio="17" rot="SR180"/>
-<attribute name="VALUE" x="15.0618" y="22.469" size="2.0828" layer="27" ratio="10" rot="SR180"/>
+<attribute name="NAME" x="76.399" y="14.113" size="0.9" layer="25" ratio="17" rot="SR180"/>
+<attribute name="VALUE" x="72.631" y="28.6618" size="2.0828" layer="27" ratio="10" rot="SR270"/>
 </element>
 <element name="U4" library="Xevelabs" package="QFN-32_50P_N" value="ATmega16u2" x="23.45" y="22.1" smashed="yes" rot="R135">
 <attribute name="NAME" x="24.843" y="21.470671875" size="0.7" layer="51" ratio="5" rot="R135"/>
-<attribute name="NAME" x="22.9762375" y="17.935140625" size="0.9" layer="25" ratio="17" rot="R135"/>
-<attribute name="VALUE" x="28.230040625" y="22.990953125" size="0.7" layer="27" ratio="5" rot="R135"/>
+<attribute name="NAME" x="85.1262375" y="19.485140625" size="0.9" layer="25" ratio="17" rot="R135"/>
+<attribute name="VALUE" x="80.330040625" y="21.890953125" size="0.7" layer="27" ratio="5" rot="R135"/>
 </element>
 <element name="C7" library="Xevelabs" package="0402_N" value="1uF" x="19.45" y="20.15" smashed="yes" rot="R225">
-<attribute name="NAME" x="18.495403125" y="19.5631" size="0.9" layer="25" ratio="17" rot="R225"/>
-<attribute name="VALUE" x="20.609653125" y="20.36213125" size="0.7" layer="27" ratio="5" rot="R225"/>
+<attribute name="NAME" x="80.645403125" y="21.1131" size="0.9" layer="25" ratio="17" rot="R225"/>
+<attribute name="VALUE" x="72.709653125" y="19.26213125" size="0.7" layer="27" ratio="5" rot="R225"/>
 </element>
 <element name="C15" library="Xevelabs" package="0402_N" value="18pF" x="26.20796875" y="17.9656875" smashed="yes" rot="R45">
-<attribute name="NAME" x="30.7125625" y="21.902584375" size="0.9" layer="25" ratio="17" rot="R45"/>
-<attribute name="VALUE" x="25.0483125" y="17.753553125" size="0.7" layer="27" ratio="5" rot="R45"/>
+<attribute name="NAME" x="71.7125625" y="20.002584375" size="0.9" layer="25" ratio="17" rot="R45"/>
+<attribute name="VALUE" x="77.1483125" y="16.653553125" size="0.7" layer="27" ratio="5" rot="R45"/>
 </element>
 <element name="C16" library="Xevelabs" package="0402_N" value="18pF" x="27.586825" y="19.34454375" smashed="yes" rot="R225">
-<attribute name="NAME" x="28.717771875" y="19.94235625" size="0.9" layer="25" ratio="17" rot="R45"/>
-<attribute name="VALUE" x="28.746478125" y="19.556675" size="0.7" layer="27" ratio="5" rot="R225"/>
+<attribute name="NAME" x="69.717771875" y="18.04235625" size="0.9" layer="25" ratio="17" rot="R45"/>
+<attribute name="VALUE" x="80.846478125" y="18.456675" size="0.7" layer="27" ratio="5" rot="R225"/>
 </element>
 <element name="RPTC2" library="Xevelabs" package="0603_N" value="100R" x="33.95" y="7.55" smashed="yes" rot="R270">
-<attribute name="NAME" x="35.57" y="4.87" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="34.93" y="9.07" size="0.7" layer="27" ratio="5" rot="R270"/>
+<attribute name="NAME" x="76.57" y="2.97" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="75.03" y="7.52" size="0.7" layer="27" ratio="5" rot="R270"/>
 </element>
 <element name="D4" library="Xevelabs" package="SOD-923_N" value="5.1V" x="33.95" y="10.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="33.4" y="9.59" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="34.16" y="11.14" size="0.7" layer="27" ratio="5" rot="R90"/>
+<attribute name="NAME" x="74.4" y="7.69" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="74.26" y="9.59" size="0.7" layer="27" ratio="5" rot="R90"/>
 </element>
 <element name="R3" library="Xevelabs" package="ARRAY_0402_65P_2_N" value="22R" x="18.1" y="17.15" smashed="yes" rot="R225">
-<attribute name="NAME" x="17.102978125" y="16.633809375" size="0.9" layer="25" ratio="17" rot="R225"/>
-<attribute name="VALUE" x="19.11823125" y="17.263134375" size="0.7" layer="27" ratio="5" rot="R225"/>
+<attribute name="NAME" x="79.252978125" y="18.183809375" size="0.9" layer="25" ratio="17" rot="R225"/>
+<attribute name="VALUE" x="71.21823125" y="16.163134375" size="0.7" layer="27" ratio="5" rot="R225"/>
 </element>
-<element name="SJ2" library="Xevelabs" package="SJ_2S-TRACE2" value="SOLDERJUMPER2_TRACE2" x="28.65" y="21.05" rot="MR180"/>
+<element name="SJ2" library="Xevelabs" package="SJ_2S-TRACE2" value="SOLDERJUMPER2_TRACE2" x="28.65" y="21.05" smashed="yes" rot="MR180">
+<attribute name="NAME" x="75.5475" y="20.93" size="0.4064" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="72.649" y="17.6475" size="0.4064" layer="28" rot="MR90"/>
+</element>
 <element name="D7" library="OPL" package="LED0603" value="Red" x="36.1" y="22.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="36.935" y="23.405" size="0.9" layer="25" ratio="17" rot="R270"/>
-<attribute name="VALUE" x="35.7825" y="23.643" size="0.635" layer="27" ratio="10" rot="R270"/>
+<attribute name="NAME" x="77.935" y="21.505" size="0.9" layer="25" ratio="17" rot="R270"/>
+<attribute name="VALUE" x="75.8825" y="22.093" size="0.635" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="D8" library="OPL" package="LED0603" value="Green" x="34.5" y="22.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="32.735" y="23.355" size="0.9" layer="25" ratio="17" rot="R270"/>
-<attribute name="VALUE" x="34.1825" y="23.643" size="0.635" layer="27" ratio="10" rot="R270"/>
+<attribute name="NAME" x="73.735" y="21.455" size="0.9" layer="25" ratio="17" rot="R270"/>
+<attribute name="VALUE" x="74.2825" y="22.093" size="0.635" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="C20" library="Xevelabs" package="0402_N" value="1uF" x="19.1" y="13.6" smashed="yes" rot="R225">
-<attribute name="NAME" x="18.145403125" y="13.0131" size="0.9" layer="25" ratio="17" rot="R225"/>
-<attribute name="VALUE" x="20.259653125" y="13.81213125" size="0.7" layer="27" ratio="5" rot="R225"/>
+<attribute name="NAME" x="80.295403125" y="14.5631" size="0.9" layer="25" ratio="17" rot="R225"/>
+<attribute name="VALUE" x="72.359653125" y="12.71213125" size="0.7" layer="27" ratio="5" rot="R225"/>
 </element>
 <element name="U2" library="3DRobotics_Master_Library" package="QFN-24" value="MPU-6000" x="40.7" y="9.1" smashed="yes" rot="R180">
 <attribute name="MFGPN" value="MPU-6000" x="40.7" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DATASHEET" value="http://invensense.com/mems/gyro/documents/PS-MPU-6000A-00_v1.0.pdf" x="40.7" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="LINK" value="http://invensense.com/mems/gyro/mpu6000.html" x="40.7" y="9.1" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="43.15" y="6.3" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="43.2" y="13.25" size="1.27" layer="27" rot="R180"/>
+<attribute name="NAME" x="84.15" y="4.4" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="83.3" y="11.7" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C21" library="Xevelabs" package="0402_N" value="1uF" x="37.5" y="9.85" smashed="yes" rot="R270">
-<attribute name="NAME" x="35.84" y="11.11" size="0.9" layer="25" ratio="17" rot="R270"/>
-<attribute name="VALUE" x="38.17" y="10.82" size="0.7" layer="27" ratio="5" rot="R270"/>
+<attribute name="NAME" x="76.84" y="9.21" size="0.9" layer="25" ratio="17" rot="R270"/>
+<attribute name="VALUE" x="78.27" y="9.27" size="0.7" layer="27" ratio="5" rot="R270"/>
 </element>
 <element name="C22" library="Xevelabs" package="0402_N" value="2.2nF" x="39.45" y="5.85" smashed="yes" rot="R180">
-<attribute name="NAME" x="41.11" y="5.21" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="40.42" y="5.18" size="0.7" layer="27" ratio="5" rot="R180"/>
+<attribute name="NAME" x="82.11" y="3.31" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="79.32" y="11.73" size="0.7" layer="27" ratio="5" rot="R180"/>
 </element>
 <element name="C23" library="Xevelabs" package="0402_N" value="0.1uF" x="40.2" y="12.85" smashed="yes" rot="R90">
-<attribute name="NAME" x="40.86" y="14.14" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="39.53" y="11.88" size="0.7" layer="27" ratio="5" rot="R90"/>
+<attribute name="NAME" x="81.86" y="12.24" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="79.63" y="10.33" size="0.7" layer="27" ratio="5" rot="R90"/>
 </element>
 <element name="C18" library="Xevelabs" package="0402_N" value="18pF" x="21.35146875" y="26.837259375" smashed="yes" rot="R315">
-<attribute name="NAME" x="21.938365625" y="25.8826625" size="0.9" layer="25" ratio="17" rot="R315"/>
-<attribute name="VALUE" x="21.139334375" y="27.9969125" size="0.7" layer="27" ratio="5" rot="R315"/>
+<attribute name="NAME" x="84.088365625" y="27.4326625" size="0.9" layer="25" ratio="17" rot="R315"/>
+<attribute name="VALUE" x="73.239334375" y="26.8969125" size="0.7" layer="27" ratio="5" rot="R315"/>
 </element>
 <element name="C19" library="Xevelabs" package="0402_N" value="18pF" x="20.00796875" y="28.1807625" smashed="yes" rot="R135">
-<attribute name="NAME" x="19.42106875" y="29.13535625" size="0.9" layer="25" ratio="17" rot="R135"/>
-<attribute name="VALUE" x="20.2201" y="27.02110625" size="0.7" layer="27" ratio="5" rot="R135"/>
+<attribute name="NAME" x="81.57106875" y="30.68535625" size="0.9" layer="25" ratio="17" rot="R135"/>
+<attribute name="VALUE" x="72.3201" y="25.92110625" size="0.7" layer="27" ratio="5" rot="R135"/>
 </element>
 <element name="C24" library="Xevelabs" package="0402_N" value="18pF" x="61.17868125" y="10.04705625" smashed="yes">
-<attribute name="NAME" x="61.41294375" y="10.66868125" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="60.20868125" y="10.71705625" size="0.7" layer="27" ratio="5"/>
+<attribute name="NAME" x="72.06294375" y="12.46868125" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="81.90868125" y="13.81705625" size="0.7" layer="27" ratio="5"/>
 </element>
 <element name="C25" library="Xevelabs" package="0402_N" value="18pF" x="59.261521875" y="10.047059375" smashed="yes" rot="R180">
-<attribute name="NAME" x="60.257059375" y="10.628478125" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="60.231521875" y="9.377059375" size="0.7" layer="27" ratio="5" rot="R180"/>
+<attribute name="NAME" x="73.607059375" y="14.578478125" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="81.931521875" y="12.477059375" size="0.7" layer="27" ratio="5" rot="R180"/>
 </element>
 <element name="Q5" library="Xevelabs" package="CRYSTAL_MODEL-403_N" value="24MHz" x="12" y="8.15" smashed="yes" rot="R180">
-<attribute name="NAME" x="13.65" y="6.6" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="12.62" y="10.23" size="0.7" layer="27" rot="R180"/>
+<attribute name="NAME" x="75.4" y="10.65" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="78.37" y="11.13" size="0.7" layer="27" rot="R180"/>
 </element>
 <element name="C26" library="Xevelabs" package="0402_N" value="18pF" x="11" y="10.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="9.91" y="10.36" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="11.97" y="9.43" size="0.7" layer="27" ratio="5" rot="R180"/>
+<attribute name="NAME" x="74.71" y="4.26" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="73.77" y="10.98" size="0.7" layer="27" ratio="5" rot="R180"/>
 </element>
 <element name="C27" library="Xevelabs" package="0402_N" value="18pF" x="13" y="10.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="11.91" y="10.36" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="13.97" y="9.43" size="0.7" layer="27" ratio="5" rot="R180"/>
+<attribute name="NAME" x="85.26" y="2.26" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="79.72" y="10.33" size="0.7" layer="27" ratio="5" rot="R180"/>
 </element>
 <element name="C28" library="Xevelabs" package="0402_N" value="1uF" x="11.15" y="21.75" smashed="yes" rot="R90">
-<attribute name="NAME" x="11.41" y="22.84" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="10.48" y="20.78" size="0.7" layer="27" ratio="5" rot="R90"/>
+<attribute name="NAME" x="73.56" y="24.39" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="79.13" y="18.08" size="0.7" layer="27" ratio="5" rot="R90"/>
 </element>
 <element name="R6" library="Xevelabs" package="0402_N" value="12k 1%" x="14.95" y="11.15" smashed="yes">
-<attribute name="NAME" x="16.04" y="10.89" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="13.98" y="11.82" size="0.7" layer="27" ratio="5"/>
+<attribute name="NAME" x="78.19" y="12.44" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="73.63" y="12.22" size="0.7" layer="27" ratio="5"/>
 </element>
 <element name="C29" library="Xevelabs" package="0402_N" value="0.1uF" x="14.95" y="10.1" smashed="yes">
-<attribute name="NAME" x="16.04" y="9.84" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="13.98" y="10.77" size="0.7" layer="27" ratio="5"/>
+<attribute name="NAME" x="78.19" y="11.39" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="72.98" y="10.77" size="0.7" layer="27" ratio="5"/>
 </element>
 <element name="C30" library="Xevelabs" package="0402_N" value="0.1uF" x="10.1" y="21.75" smashed="yes" rot="R90">
-<attribute name="NAME" x="10.36" y="22.84" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="9.43" y="20.78" size="0.7" layer="27" ratio="5" rot="R90"/>
+<attribute name="NAME" x="72.51" y="24.39" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="78.08" y="18.08" size="0.7" layer="27" ratio="5" rot="R90"/>
 </element>
 <element name="R5" library="Xevelabs" package="0402_N" value="10k" x="12.55" y="21.75" smashed="yes" rot="R90">
-<attribute name="NAME" x="12.81" y="22.84" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="11.88" y="20.78" size="0.7" layer="27" ratio="5" rot="R90"/>
+<attribute name="NAME" x="74.96" y="24.39" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="80.53" y="18.08" size="0.7" layer="27" ratio="5" rot="R90"/>
 </element>
 <element name="R7" library="Xevelabs" package="0402_N" value="10k" x="13.6" y="21.75" smashed="yes" rot="R270">
-<attribute name="NAME" x="13.34" y="20.66" size="0.9" layer="25" ratio="17" rot="R270"/>
-<attribute name="VALUE" x="14.27" y="22.72" size="0.7" layer="27" ratio="5" rot="R270"/>
+<attribute name="NAME" x="75.49" y="22.21" size="0.9" layer="25" ratio="17" rot="R270"/>
+<attribute name="VALUE" x="77.72" y="17.97" size="0.7" layer="27" ratio="5" rot="R270"/>
 </element>
 <element name="C31" library="Xevelabs" package="0402_N" value="1uF" x="7.8" y="11.25" smashed="yes" rot="R270">
-<attribute name="NAME" x="7.54" y="10.16" size="0.9" layer="25" ratio="17" rot="R270"/>
-<attribute name="VALUE" x="8.47" y="12.22" size="0.7" layer="27" ratio="5" rot="R270"/>
+<attribute name="NAME" x="84.29" y="8.41" size="0.9" layer="25" ratio="17" rot="R270"/>
+<attribute name="VALUE" x="82.27" y="14.22" size="0.7" layer="27" ratio="5" rot="R270"/>
 </element>
 <element name="C32" library="Xevelabs" package="0402_N" value="1uF" x="4.35" y="16.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="3.26" y="16.76" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="5.32" y="15.83" size="0.7" layer="27" ratio="5" rot="R180"/>
+<attribute name="NAME" x="74.11" y="23.16" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="79.12" y="17.83" size="0.7" layer="27" ratio="5" rot="R180"/>
 </element>
 <element name="C33" library="Xevelabs" package="0402_N" value="1uF" x="9.05" y="21.75" smashed="yes" rot="R90">
-<attribute name="NAME" x="9.31" y="22.84" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="8.38" y="20.78" size="0.7" layer="27" ratio="5" rot="R90"/>
+<attribute name="NAME" x="71.46" y="24.39" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="77.03" y="18.08" size="0.7" layer="27" ratio="5" rot="R90"/>
 </element>
 <element name="C34" library="Xevelabs" package="0402_N" value="1uF" x="15.1" y="16.5" smashed="yes">
-<attribute name="NAME" x="16.19" y="16.24" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="14.13" y="17.17" size="0.7" layer="27" ratio="5"/>
+<attribute name="NAME" x="78.34" y="17.79" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="73.28" y="16.02" size="0.7" layer="27" ratio="5"/>
 </element>
 <element name="C35" library="Xevelabs" package="0402_N" value="1uF" x="13" y="12.2" smashed="yes">
-<attribute name="NAME" x="14.09" y="11.94" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="12.03" y="12.87" size="0.7" layer="27" ratio="5"/>
+<attribute name="NAME" x="76.24" y="13.49" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="72.73" y="12.87" size="0.7" layer="27" ratio="5"/>
 </element>
 <element name="R8" library="Xevelabs" package="0402_N" value="100k" x="8" y="21.75" smashed="yes" rot="R90">
-<attribute name="NAME" x="8.26" y="22.84" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="7.33" y="20.78" size="0.7" layer="27" ratio="5" rot="R90"/>
+<attribute name="NAME" x="70.41" y="24.39" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="75.98" y="18.08" size="0.7" layer="27" ratio="5" rot="R90"/>
 </element>
 <element name="C36" library="Xevelabs" package="0402_N" value="1uF" x="7" y="21.75" smashed="yes" rot="R270">
-<attribute name="NAME" x="6.74" y="20.66" size="0.9" layer="25" ratio="17" rot="R270"/>
-<attribute name="VALUE" x="7.67" y="22.72" size="0.7" layer="27" ratio="5" rot="R270"/>
+<attribute name="NAME" x="85.29" y="17.01" size="0.9" layer="25" ratio="17" rot="R270"/>
+<attribute name="VALUE" x="76.32" y="20.02" size="0.7" layer="27" ratio="5" rot="R270"/>
 </element>
 <element name="R9" library="Xevelabs" package="0402_N" value="100k" x="6.75" y="11.25" smashed="yes" rot="R90">
-<attribute name="NAME" x="7.01" y="12.34" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="6.08" y="10.28" size="0.7" layer="27" ratio="5" rot="R90"/>
+<attribute name="NAME" x="83.76" y="9.34" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="79.88" y="12.28" size="0.7" layer="27" ratio="5" rot="R90"/>
 </element>
 <element name="R10" library="Xevelabs" package="0402_N" value="100k" x="4.35" y="17.55" smashed="yes">
-<attribute name="NAME" x="5.44" y="17.29" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="3.38" y="18.22" size="0.7" layer="27" ratio="5"/>
+<attribute name="NAME" x="80.64" y="15.09" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="82.58" y="15.37" size="0.7" layer="27" ratio="5"/>
 </element>
 <element name="R11" library="Xevelabs" package="0402_N" value="100k" x="4.35" y="14.4" smashed="yes" rot="R180">
-<attribute name="NAME" x="3.26" y="14.66" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="5.32" y="13.73" size="0.7" layer="27" ratio="5" rot="R180"/>
+<attribute name="NAME" x="85.06" y="19.01" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="79.12" y="15.73" size="0.7" layer="27" ratio="5" rot="R180"/>
 </element>
 <element name="R12" library="Xevelabs" package="0402_N" value="100k" x="4.35" y="15.45" smashed="yes">
-<attribute name="NAME" x="5.44" y="15.19" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="3.38" y="16.12" size="0.7" layer="27" ratio="5"/>
+<attribute name="NAME" x="82.74" y="12.84" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="79.63" y="12.52" size="0.7" layer="27" ratio="5"/>
 </element>
 <element name="C11" library="Xevelabs" package="0805_N" value="4.7uF" x="7.05" y="23.95" smashed="yes">
-<attribute name="NAME" x="8.86" y="23.59" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="5.3" y="25.07" size="0.7" layer="27" ratio="5"/>
+<attribute name="NAME" x="71.01" y="25.14" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="73.95" y="22.37" size="0.7" layer="27" ratio="5"/>
 </element>
 <element name="C2" library="Xevelabs" package="0402_N" value="1uF" x="57.45" y="9" smashed="yes" rot="R270">
-<attribute name="NAME" x="56.86" y="8.19" size="0.9" layer="25" font="vector" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="58.12" y="9.97" size="0.7" layer="27" ratio="5" rot="R270"/>
+<attribute name="NAME" x="76.06" y="13.79" size="0.9" layer="25" font="vector" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="79.82" y="13.07" size="0.7" layer="27" ratio="5" rot="R270"/>
 </element>
 <element name="C8" library="Xevelabs" package="0402_N" value="1uF" x="61.55" y="27.2" smashed="yes" rot="R90">
-<attribute name="NAME" x="63.16" y="26.44" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="60.88" y="26.23" size="0.7" layer="27" ratio="5" rot="R90"/>
+<attribute name="NAME" x="73.91" y="27.34" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="77.43" y="24.63" size="0.7" layer="27" ratio="5" rot="R90"/>
 </element>
 <element name="C9" library="Xevelabs" package="0402_N" value="1uF" x="40.95" y="22" smashed="yes" rot="R180">
-<attribute name="NAME" x="41.96" y="21.36" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="41.92" y="21.33" size="0.7" layer="27" ratio="5" rot="R180"/>
+<attribute name="NAME" x="82.96" y="19.46" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="82.02" y="19.78" size="0.7" layer="27" ratio="5" rot="R180"/>
 </element>
 <element name="C37" library="Xevelabs" package="0402_N" value="1uF" x="43.95" y="14.6" smashed="yes" rot="R180">
-<attribute name="NAME" x="42.59" y="17.96" size="0.9" layer="25" ratio="17" rot="R270"/>
-<attribute name="VALUE" x="44.92" y="13.93" size="0.7" layer="27" ratio="5" rot="R180"/>
+<attribute name="NAME" x="83.59" y="16.06" size="0.9" layer="25" ratio="17" rot="R270"/>
+<attribute name="VALUE" x="85.02" y="12.38" size="0.7" layer="27" ratio="5" rot="R180"/>
 </element>
 <element name="C38" library="Xevelabs" package="0402_N" value="1uF" x="48.45" y="30.65" smashed="yes" rot="R180">
-<attribute name="NAME" x="47.36" y="30.81" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="49.42" y="29.98" size="0.7" layer="27" ratio="5" rot="R180"/>
+<attribute name="NAME" x="76.36" y="28.46" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="50.87" y="35.58" size="0.7" layer="27" ratio="5" rot="R180"/>
 </element>
 <element name="C12" library="Xevelabs" package="0402_N" value="1uF" x="17.35" y="21.75" smashed="yes" rot="R270">
-<attribute name="NAME" x="17.09" y="20.66" size="0.9" layer="25" ratio="17" rot="R270"/>
-<attribute name="VALUE" x="18.02" y="22.72" size="0.7" layer="27" ratio="5" rot="R270"/>
+<attribute name="NAME" x="79.24" y="22.21" size="0.9" layer="25" ratio="17" rot="R270"/>
+<attribute name="VALUE" x="70.12" y="21.62" size="0.7" layer="27" ratio="5" rot="R270"/>
 </element>
 <element name="C39" library="Xevelabs" package="0402_N" value="1uF" x="10.85" y="24.7" smashed="yes" rot="R180">
-<attribute name="NAME" x="9.76" y="24.96" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="11.82" y="24.03" size="0.7" layer="27" ratio="5" rot="R180"/>
+<attribute name="NAME" x="71.91" y="26.51" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="80.47" y="21.33" size="0.7" layer="27" ratio="5" rot="R180"/>
 </element>
 <element name="C10" library="Xevelabs" package="0402_N" value="18pF" x="53.3" y="7.6" smashed="yes" rot="R180">
-<attribute name="NAME" x="54.21" y="7.06" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="54.27" y="6.93" size="0.7" layer="27" ratio="5" rot="R180"/>
+<attribute name="NAME" x="83.21" y="4.71" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="75.97" y="10.03" size="0.7" layer="27" ratio="5" rot="R180"/>
 </element>
 <element name="C40" library="Xevelabs" package="0402_N" value="0.1uF" x="20.45" y="24.3" smashed="yes" rot="R45">
-<attribute name="NAME" x="21.40459375" y="24.886896875" size="0.9" layer="25" ratio="17" rot="R45"/>
-<attribute name="VALUE" x="19.29034375" y="24.087865625" size="0.7" layer="27" ratio="5" rot="R45"/>
+<attribute name="NAME" x="83.55459375" y="26.436896875" size="0.9" layer="25" ratio="17" rot="R45"/>
+<attribute name="VALUE" x="71.39034375" y="22.987865625" size="0.7" layer="27" ratio="5" rot="R45"/>
 </element>
 <element name="C41" library="Xevelabs" package="0402_N" value="0.1uF" x="22.4" y="8.3" smashed="yes" rot="R90">
-<attribute name="NAME" x="22.66" y="9.39" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="21.73" y="7.33" size="0.7" layer="27" ratio="5" rot="R90"/>
+<attribute name="NAME" x="84.81" y="10.94" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="73.83" y="6.23" size="0.7" layer="27" ratio="5" rot="R90"/>
 </element>
 <element name="Q1" library="Xevelabs" package="CRYSTAL_MODEL-403_N" value="16MHz" x="18.85" y="8.1" smashed="yes">
-<attribute name="NAME" x="17.2" y="9.65" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="18.23" y="6.02" size="0.7" layer="27"/>
+<attribute name="NAME" x="79.35" y="11.2" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="72.78" y="13.62" size="0.7" layer="27"/>
 </element>
 <element name="Q4" library="Xevelabs" package="CRYSTAL_MODEL-403_N" value="16MHz" x="28.29393125" y="17.223225" smashed="yes" rot="R45">
-<attribute name="NAME" x="29.5811875" y="14.9525125" size="0.9" layer="25" ratio="17" rot="R45"/>
-<attribute name="VALUE" x="29.32630625" y="15.314034375" size="0.7" layer="27" rot="R45"/>
+<attribute name="NAME" x="70.5811875" y="13.0525125" size="0.9" layer="25" ratio="17" rot="R45"/>
+<attribute name="VALUE" x="81.42630625" y="14.214034375" size="0.7" layer="27" rot="R45"/>
 </element>
 <element name="Q3" library="Xevelabs" package="CRYSTAL_MODEL-403_N" value="16MHz" x="22.1292875" y="28.88786875" smashed="yes" rot="R135">
-<attribute name="NAME" x="22.199996875" y="26.625125" size="0.9" layer="25" ratio="17" rot="R135"/>
-<attribute name="VALUE" x="24.038475" y="29.92024375" size="0.7" layer="27" rot="R135"/>
+<attribute name="NAME" x="84.349996875" y="28.175125" size="0.9" layer="25" ratio="17" rot="R135"/>
+<attribute name="VALUE" x="22.888475" y="36.82024375" size="0.7" layer="27" rot="R135"/>
 </element>
 <element name="Q2" library="Xevelabs" package="CRYSTAL_MODEL-403_N" value="16MHz" x="59.75" y="8.04141875" smashed="yes">
-<attribute name="NAME" x="62.75858125" y="7.3" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="59.13" y="5.96141875" size="0.7" layer="27"/>
+<attribute name="NAME" x="73.40858125" y="10.15" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="80.83" y="9.06141875" size="0.7" layer="27"/>
 </element>
 <element name="R13" library="Xevelabs" package="ARRAY_0402_65P_2_N" value="22R" x="16" y="21.75" smashed="yes" rot="R270">
-<attribute name="NAME" x="15.66" y="20.68" size="0.9" layer="25" ratio="17" rot="R270"/>
-<attribute name="VALUE" x="16.64" y="22.55" size="0.7" layer="27" ratio="5" rot="R270"/>
+<attribute name="NAME" x="77.81" y="22.23" size="0.9" layer="25" ratio="17" rot="R270"/>
+<attribute name="VALUE" x="68.74" y="21.45" size="0.7" layer="27" ratio="5" rot="R270"/>
 </element>
 <element name="D5" library="OPL" package="LED0603" value="Yellow" x="9.95" y="27.35" smashed="yes" rot="R90">
-<attribute name="NAME" x="9.315" y="25.445" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="10.2675" y="26.207" size="0.635" layer="27" ratio="10" rot="R90"/>
+<attribute name="NAME" x="71.465" y="26.995" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="78.9175" y="23.507" size="0.635" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="D6" library="OPL" package="LED0603" value="Yellow" x="11.5" y="27.35" smashed="yes" rot="R90">
-<attribute name="NAME" x="10.865" y="25.445" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="11.8175" y="26.207" size="0.635" layer="27" ratio="10" rot="R90"/>
+<attribute name="NAME" x="73.015" y="26.995" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="80.4675" y="23.507" size="0.635" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="C17" library="Xevelabs" package="0402_N" value="1uF" x="14.65" y="21.75" smashed="yes" rot="R90">
-<attribute name="NAME" x="14.91" y="22.84" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="13.98" y="20.78" size="0.7" layer="27" ratio="5" rot="R90"/>
+<attribute name="NAME" x="77.06" y="24.39" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="73.53" y="19.13" size="0.7" layer="27" ratio="5" rot="R90"/>
 </element>
 <element name="C14" library="Xevelabs" package="0402_N" value="0.1uF" x="28.9" y="28.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="30.71" y="27.91" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="29.87" y="27.83" size="0.7" layer="27" ratio="5" rot="R180"/>
+<attribute name="NAME" x="71.71" y="26.01" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="81.97" y="26.73" size="0.7" layer="27" ratio="5" rot="R180"/>
 </element>
 <element name="C3" library="Xevelabs" package="0402_N" value="0.1uF" x="42" y="23.65" smashed="yes">
-<attribute name="NAME" x="41.24" y="24.34" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="41.03" y="24.32" size="0.7" layer="27" ratio="5"/>
+<attribute name="NAME" x="82.24" y="22.44" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="81.13" y="22.77" size="0.7" layer="27" ratio="5"/>
 </element>
 <element name="D9" library="OPL" package="LED0603" value="Yellow" x="35.25" y="28.3" smashed="yes">
-<attribute name="NAME" x="34.495" y="26.635" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="34.107" y="27.9825" size="0.635" layer="27" ratio="10"/>
+<attribute name="NAME" x="75.495" y="24.735" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="74.207" y="26.4325" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="C13" library="Xevelabs" package="0402_N" value="1uF" x="6.9" y="30.5" smashed="yes">
-<attribute name="NAME" x="5.96" y="30.96" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="5.93" y="31.17" size="0.7" layer="27" ratio="5"/>
+<attribute name="NAME" x="80.81" y="28.01" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="6.83" y="33.97" size="0.7" layer="27" ratio="5"/>
 </element>
 <element name="RN1" library="resistor-dil" package="CAY16" value="1k" x="36.25" y="17.65" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="36.25" y="17.65" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="36.25" y="17.65" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="36.25" y="17.65" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="36.25" y="17.65" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="38.59" y="17.595" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="34.98" y="15.745" size="1.27" layer="27" ratio="10" rot="R90"/>
+<attribute name="NAME" x="79.59" y="15.695" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="75.08" y="14.195" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="D10" library="OPL" package="LED0603" value="Blue" x="35.25" y="29.9" smashed="yes">
-<attribute name="NAME" x="34.045" y="30.685" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="34.107" y="29.5825" size="0.635" layer="27" ratio="10"/>
+<attribute name="NAME" x="75.045" y="28.785" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="29.157" y="35.4825" size="0.635" layer="27" ratio="10"/>
 </element>
 <element name="U5" library="Xevelabs" package="QFN-32_50P_N" value="ATmega16u2" x="15.5" y="26.45" smashed="yes" rot="R180">
 <attribute name="NAME" x="16.93" y="26.99" size="0.7" layer="51" ratio="5" rot="R180"/>
-<attribute name="NAME" x="18.11" y="23.17" size="0.9" layer="25" ratio="17" rot="R180"/>
-<attribute name="VALUE" x="18.25" y="30.46" size="0.7" layer="27" ratio="5" rot="R180"/>
+<attribute name="NAME" x="80.26" y="24.72" size="0.9" layer="25" ratio="17" rot="R180"/>
+<attribute name="VALUE" x="15.65" y="35.51" size="0.7" layer="27" ratio="5" rot="R180"/>
 </element>
 <element name="R4" library="Xevelabs" package="0402_N" value="470R" x="42.95" y="12.55" smashed="yes">
-<attribute name="NAME" x="42.24" y="13.09" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="41.98" y="13.22" size="0.7" layer="27" ratio="5"/>
+<attribute name="NAME" x="83.24" y="11.19" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="82.08" y="11.67" size="0.7" layer="27" ratio="5"/>
 </element>
 <element name="R14" library="Xevelabs" package="0402_N" value="470R" x="38" y="12.85" smashed="yes" rot="R90">
-<attribute name="NAME" x="38.41" y="14.49" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="37.33" y="11.88" size="0.7" layer="27" ratio="5" rot="R90"/>
+<attribute name="NAME" x="79.41" y="12.59" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="77.43" y="10.33" size="0.7" layer="27" ratio="5" rot="R90"/>
 </element>
 <element name="RN2" library="resistor-dil" package="CAT16" value="10K" x="45.25" y="10.2" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="45.25" y="10.2" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="45.25" y="10.2" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="45.25" y="10.2" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="45.25" y="10.2" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="46.895" y="10.51" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="43.345" y="11.47" size="1.27" layer="27" ratio="10"/>
+<attribute name="NAME" x="75.895" y="8.16" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="83.445" y="9.92" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="RN6" library="resistor-dil" package="CAT16" value="20K" x="45.25" y="7.3" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="unknown" x="45.25" y="7.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="45.25" y="7.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="45.25" y="7.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="45.25" y="7.3" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="47.095" y="6.26" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="47.155" y="6.03" size="1.27" layer="27" ratio="10" rot="R180"/>
+<attribute name="NAME" x="76.095" y="3.91" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="79.455" y="12.58" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="D11" library="Xevelabs" package="SOD-523_N" value="3.3V" x="41.3" y="13.15" smashed="yes" rot="R90">
-<attribute name="NAME" x="42.1" y="14.49" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="41.51" y="14.09" size="0.7" layer="27" ratio="5" rot="R90"/>
+<attribute name="NAME" x="83.1" y="12.59" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="81.61" y="12.54" size="0.7" layer="27" ratio="5" rot="R90"/>
 </element>
 <element name="D12" library="Xevelabs" package="SOD-523_N" value="3.3V" x="39.1" y="13.15" smashed="yes" rot="R90">
-<attribute name="NAME" x="39.6" y="14.44" size="0.9" layer="25" ratio="17" rot="R90"/>
-<attribute name="VALUE" x="39.31" y="14.09" size="0.7" layer="27" ratio="5" rot="R90"/>
+<attribute name="NAME" x="80.6" y="12.54" size="0.9" layer="25" ratio="17" rot="R90"/>
+<attribute name="VALUE" x="79.41" y="12.54" size="0.7" layer="27" ratio="5" rot="R90"/>
 </element>
 <element name="R15" library="Xevelabs" package="0402_N" value="10k" x="55.2" y="7.6" smashed="yes" rot="R180">
-<attribute name="NAME" x="54.59" y="6.09" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="56.17" y="6.93" size="0.7" layer="27" ratio="5" rot="R180"/>
+<attribute name="NAME" x="83.59" y="3.74" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="77.87" y="10.03" size="0.7" layer="27" ratio="5" rot="R180"/>
 </element>
 <element name="R16" library="Xevelabs" package="0402_N" value="10k" x="21.35" y="8.3" smashed="yes" rot="R270">
-<attribute name="NAME" x="21.09" y="7.21" size="0.9" layer="25" ratio="17" rot="R270"/>
-<attribute name="VALUE" x="22.02" y="9.27" size="0.7" layer="27" ratio="5" rot="R270"/>
+<attribute name="NAME" x="70.59" y="10.66" size="0.9" layer="25" ratio="17" rot="R270"/>
+<attribute name="VALUE" x="74.12" y="8.17" size="0.7" layer="27" ratio="5" rot="R270"/>
 </element>
 <element name="R17" library="Xevelabs" package="0402_N" value="10k" x="19.1" y="22.95" smashed="yes" rot="R45">
-<attribute name="NAME" x="20.05459375" y="23.536896875" size="0.9" layer="25" ratio="17" rot="R45"/>
-<attribute name="VALUE" x="17.94034375" y="22.737865625" size="0.7" layer="27" ratio="5" rot="R45"/>
+<attribute name="NAME" x="82.20459375" y="25.086896875" size="0.9" layer="25" ratio="17" rot="R45"/>
+<attribute name="VALUE" x="70.04034375" y="21.637865625" size="0.7" layer="27" ratio="5" rot="R45"/>
 </element>
 <element name="R18" library="Xevelabs" package="0402_N" value="10k" x="10.85" y="23.65" smashed="yes">
-<attribute name="NAME" x="11.94" y="23.39" size="0.9" layer="25" ratio="17"/>
-<attribute name="VALUE" x="9.88" y="24.32" size="0.7" layer="27" ratio="5"/>
+<attribute name="NAME" x="74.09" y="24.94" size="0.9" layer="25" ratio="17"/>
+<attribute name="VALUE" x="78.53" y="21.62" size="0.7" layer="27" ratio="5"/>
 </element>
 <element name="U$1" library="SparkFun-Aesthetics" package="OSHW-LOGO-M" value="" x="65.15" y="25.35" rot="R90"/>
 <element name="U$2" library="cc-by-sa" package="CC-BY-SA" value="" x="65.05" y="12.45" rot="R90"/>
@@ -4047,29 +4048,13 @@ design rules under a new name.</description>
 <via x="42.9" y="22.7" extent="1-16" drill="0.4"/>
 <via x="8.05" y="18" extent="1-16" drill="0.4"/>
 <via x="11.05" y="18" extent="1-16" drill="0.4"/>
-<via x="8.8" y="18" extent="1-16" drill="0.4"/>
 <via x="9.55" y="18" extent="1-16" drill="0.4"/>
-<via x="10.3" y="18" extent="1-16" drill="0.4"/>
 <via x="8.05" y="15" extent="1-16" drill="0.4"/>
 <via x="11.05" y="15" extent="1-16" drill="0.4"/>
 <via x="9.55" y="15" extent="1-16" drill="0.4"/>
 <via x="11.05" y="16.5" extent="1-16" drill="0.4"/>
 <via x="8.05" y="16.5" extent="1-16" drill="0.4"/>
-<via x="8.8" y="16.5" extent="1-16" drill="0.4"/>
-<via x="8.05" y="17.25" extent="1-16" drill="0.4"/>
-<via x="8.05" y="15.75" extent="1-16" drill="0.4"/>
-<via x="8.8" y="15.75" extent="1-16" drill="0.4"/>
-<via x="8.8" y="17.25" extent="1-16" drill="0.4"/>
-<via x="9.55" y="17.25" extent="1-16" drill="0.4"/>
-<via x="10.3" y="17.25" extent="1-16" drill="0.4"/>
-<via x="11.05" y="17.25" extent="1-16" drill="0.4"/>
-<via x="10.3" y="16.5" extent="1-16" drill="0.4"/>
 <via x="9.55" y="16.5" extent="1-16" drill="0.4"/>
-<via x="9.55" y="15.75" extent="1-16" drill="0.4"/>
-<via x="8.8" y="15" extent="1-16" drill="0.4"/>
-<via x="10.3" y="15" extent="1-16" drill="0.4"/>
-<via x="10.3" y="15.75" extent="1-16" drill="0.4"/>
-<via x="11.05" y="15.75" extent="1-16" drill="0.4"/>
 <wire x1="11.0486" y1="19.421" x2="11.0486" y2="18.4538875" width="0.3" layer="1"/>
 <wire x1="11.0486" y1="18.4538875" x2="11.0486" y2="18.3486" width="0.3" layer="1"/>
 <wire x1="11.0486" y1="18.3486" x2="10.75" y2="18.05" width="0.3" layer="1"/>
@@ -4111,8 +4096,8 @@ design rules under a new name.</description>
 <contactref element="X1" pad="10"/>
 <contactref element="X1" pad="8"/>
 <polygon width="0.2" layer="16">
-<vertex x="0" y="2.25"/>
-<vertex x="67.55" y="1.85"/>
+<vertex x="0" y="1.85"/>
+<vertex x="67.6" y="1.75"/>
 <vertex x="67.6" y="4.85"/>
 <vertex x="0" y="4.85"/>
 </polygon>
